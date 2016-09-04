@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="parceptionare"
+		module="parceptionare_2.11"
+		revision="1.0-SNAPSHOT"
+		status="integration"
+		publication="20160904142100"
+	>
+		<description>
+		parceptionare
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="compile-internal" visibility="private" description="" extends="compile,optional,provided"/>
+		<conf name="runtime-internal" visibility="private" description="" extends="runtime,optional"/>
+		<conf name="test-internal" visibility="private" description="" extends="test,optional,provided"/>
+		<conf name="plugin" visibility="private" description=""/>
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		<conf name="scala-tool" visibility="private" description=""/>
+	</configurations>
+	<publications>
+		<artifact name="parceptionare_2.11" type="pom" ext="pom" conf="pom"/>
+		<artifact name="parceptionare_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="parceptionare_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="parceptionare_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="parser" name="parser_2.11" rev="1.0" conf="compile->default(compile)"/>
+		<dependency org="commons-io" name="commons-io" rev="2.4" conf="compile->default(compile)"/>
+		<dependency org="org.apache.commons" name="commons-compress" rev="1.10" conf="compile->default(compile)"/>
+		<dependency org="org.apache.commons" name="commons-lang3" rev="3.1" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-actor_2.11" rev="2.3.9" conf="compile->default(compile)"/>
+		<dependency org="io.reactivex" name="rxscala_2.11" rev="0.24.1" conf="compile->default(compile)"/>
+		<dependency org="com.google.api-client" name="google-api-client" rev="1.20.0" conf="compile->default(compile)"/>
+		<dependency org="com.google.apis" name="google-api-services-storage" rev="v1-rev35-1.20.0" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-slick_2.11" rev="1.1.1" conf="compile->default(compile)"/>
+		<dependency org="org.slf4j" name="slf4j-nop" rev="1.6.4" conf="compile->default(compile)"/>
+		<dependency org="org.postgresql" name="postgresql" rev="9.4-1201-jdbc41" conf="compile->default(compile)"/>
+		<dependency org="com.github.tototoshi" name="slick-joda-mapper_2.11" rev="2.0.0" conf="compile->default(compile)"/>
+		<dependency org="com.github.tminglei" name="slick-pg_2.11" rev="0.10.0" conf="compile->default(compile)"/>
+		<dependency org="com.github.tminglei" name="slick-pg_play-json_2.11" rev="0.10.0" conf="compile->default(compile)"/>
+		<dependency org="com.google.protobuf" name="protobuf-java" rev="2.6.1" conf="compile->default(compile)"/>
+		<dependency org="net.sandrogrzicic" name="scalabuff-runtime_2.11" rev="1.4.0" conf="compile->default(compile)"/>
+		<dependency org="com.spotify" name="async-google-pubsub-client" rev="1.17" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-ws_2.11" rev="2.5.5" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-json_2.11" rev="2.5.5" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe" name="config" rev="1.3.0" conf="compile->default(compile)"/>
+		<dependency org="net.codingwell" name="scala-guice_2.11" rev="4.1.0" conf="compile->default(compile)"/>
+	</dependencies>
+</ivy-module>

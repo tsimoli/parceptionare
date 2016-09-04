@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.spotify:async-google-pubsub-client:1.17:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.spotify/async-google-pubsub-client/jars/async-google-pubsub-client-1.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.spotify/async-google-pubsub-client/srcs/async-google-pubsub-client-1.17-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

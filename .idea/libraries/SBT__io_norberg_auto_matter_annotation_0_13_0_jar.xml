@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: io.norberg:auto-matter-annotation:0.13.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/io.norberg/auto-matter-annotation/jars/auto-matter-annotation-0.13.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/io.norberg/auto-matter-annotation/srcs/auto-matter-annotation-0.13.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
